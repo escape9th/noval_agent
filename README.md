@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/NovelAgent-v1.0-ff6b9d?style=for-the-badge&labelColor=1a1a2e" alt="NovelAgent"/>
 
-### 写小说这件事，不该这么累 (晐‑晐)
+### 写小说这件事，不该这么累  ༼ つ ╥﹏╥ ༽つ
 
 **一个让你专心写故事、AI 帮你打杂的智能写作平台**
 
@@ -23,7 +23,7 @@
 
 <br/>
 
-## 为什么做这个？ (晐_晐)
+## 为什么做这个？(・∀・(・∀・(・∀・*)
 
 市面上的写作工具我基本都试过了，总差点意思 —
 
@@ -38,7 +38,7 @@
 不会自作主张帮你写死剧情，而是先确认大纲、人设、走向，你觉得 OK 了再动笔。
 写完还能从读者视角帮你找毒点、查语病、检测设定冲突。
 
-简单说就是：**你负责创作，AI 负责打杂** (晐̀‿晐́)
+简单说就是：**你负责创作，AI 负责打杂** 👌
 
 <br/>
 
@@ -99,15 +99,8 @@
 
 <div align="center">
 
-<!-- 截图放到 docs/ 文件夹后取消注释 -->
 
-<!-- <img src="docs/dashboard.png" width="80%" alt="项目管理"/> -->
-
-<!-- <img src="docs/editor.png" width="80%" alt="主编辑界面"/> -->
-
-<!-- <img src="docs/theme.png" width="80%" alt="暖色主题"/> -->
-
-> 截图待补充，先 clone 下来自己体验一下吧 (晐̀ω搛́)
+> 截图待补充，先 clone 下来自己体验一下吧 (少女祈祷中...)
 
 </div>
 
@@ -210,7 +203,9 @@ cd client && npm run dev   # 前端 :5173（热重载）
 
 <div align="center">
 
-**觉得还不错？给个 Star 鼓励一下呗 (晐̀‿搛́)⭐**
+**觉得还不错？给个 Star 鼓励一下呗 (//∇//)⭐**
+
+**可能会有些小问题，本人会经常使用这个项目所以会尽可能去修，见谅🦀**
 
 MIT License · Made with ❤️ by [escape9th](https://github.com/escape9th)
 
