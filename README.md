@@ -1,3 +1,4 @@
+
 <div align="center">
 
 <img src="https://img.shields.io/badge/NovelAgent-v1.0-ff6b9d?style=for-the-badge&labelColor=1a1a2e" alt="NovelAgent"/>
@@ -98,6 +99,11 @@
 ## 截图预览
 
 <div align="center">
+<img width="1911" height="1088" alt="工作界面展示" src="https://github.com/user-attachments/assets/36c9ab13-c25c-4660-8661-8b2af3adefdf" />
+<img width="800" height="376" alt="api设置" src="https://github.com/user-attachments/assets/effdd864-961f-49cc-8def-a4eb578dc687" />
+<img width="802" height="472" alt="文风提取" src="https://github.com/user-attachments/assets/2c5c862c-bb0d-415e-b16e-65d6b53b5bab" />
+<img width="802" height="995" alt="设置展示" src="https://github.com/user-attachments/assets/b67eab40-f04b-4f3e-9128-65b7587389db" />
+<img width="1000" height="1099" alt="主界面" src="https://github.com/user-attachments/assets/8aca3f39-7d4c-47c8-9e41-08a07927b465" />
 
 
 > 截图待补充，先 clone 下来自己体验一下吧 (少女祈祷中...)
