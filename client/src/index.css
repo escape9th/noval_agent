@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Root / Global
+   ========================================================================== */
+
+:root {
+  --theme-bg: #1a1a2e;
+  --theme-surface: #16213e;
+  --theme-panel: #0f3460;
+  --theme-accent: #e94560;
+  --theme-muted: #533483;
+  --theme-text: #eaeaea;
+  --theme-text-dim: #8892b0;
+  --theme-border: #233554;
+  --theme-input: #0d1b2a;
+  --theme-input-focus: #1b2838;
+  --theme-success: #10b981;
+  --theme-warning: #f59e0b;
+  --theme-error: #ef4444;
+  --theme-user-bubble: #2563eb;
+  --theme-assistant-bubble: #1e293b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+/* ==========================================================================
+   Custom Scrollbars
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--theme-text-dim);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-border) transparent;
+}
+
+/* ==========================================================================
+   CodeMirror Overrides
+   ========================================================================== */
+
+.cm-editor {
+  height: 100%;
+  background-color: transparent !important;
+}
+
+.cm-editor .cm-scroller {
+  line-height: 1.8;
+}
+
+.cm-editor .cm-content {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', serif;
+}
+
+.cm-editor .cm-line {
+  padding: 0 0.25rem;
+}
+
+.cm-editor.cm-focused {
+  outline: none;
+}
+
+.cm-editor .cm-selectionBackground {
+  background-color: rgba(233, 69, 96, 0.15) !important;
+}
+
+.cm-editor.cm-focused .cm-selectionBackground {
+  background-color: rgba(233, 69, 96, 0.2) !important;
+}
+
+/* Active line highlight — subtle */
+.cm-editor .cm-activeLine {
+  background-color: rgba(233, 69, 96, 0.04) !important;
+}
+
+/* Matching bracket */
+.cm-editor .cm-matchingBracket {
+  color: var(--theme-accent) !important;
+  background-color: rgba(233, 69, 96, 0.1);
+  outline: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+/* ==========================================================================
+   Anime Theme — 芳文社·京阿尼·摇曳露营·轻音少女
+   Warm, cozy, slice-of-life aesthetic
+   ========================================================================== */
+
+.theme-anime {
+  --anime-pink: #f2a7b3;
+  --anime-green: #7fb069;
+  --anime-mint: #a8d8c8;
+  --anime-orange: #e88d67;
+  --anime-cream: #fdf6ec;
+  --anime-sakura: #f8c3d0;
+  --anime-forest: #5a8f5a;
+  --anime-glow: 0 0 12px rgba(232, 141, 103, 0.2);
+  --anime-gradient: linear-gradient(135deg, #a3d9a5 0%, #f2a7b3 40%, #e88d67 100%);
+  --anime-campfire: linear-gradient(180deg, #fdf6ec 0%, #f8e8d0 50%, #e88d67 150%);
+  background-image:
+    radial-gradient(ellipse at 10% 90%, rgba(163, 217, 165, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 10%, rgba(242, 167, 179, 0.06) 0%, transparent 50%);
+}
+
+.theme-anime ::selection {
+  background-color: rgba(163, 217, 165, 0.35);
+  color: #4a3728;
+}
+
+.theme-anime .cm-editor .cm-selectionBackground,
+.theme-anime .cm-editor.cm-focused .cm-selectionBackground {
+  background-color: rgba(163, 217, 165, 0.25) !important;
+}
+
+.theme-anime .cm-editor .cm-activeLine {
+  background-color: rgba(168, 216, 200, 0.12) !important;
+}
+
+.theme-anime .cm-editor .cm-matchingBracket {
+  color: var(--anime-orange) !important;
+  background-color: rgba(232, 141, 103, 0.12);
+  outline: 1px solid rgba(232, 141, 103, 0.3);
+}
+
+.theme-anime button[class*='bg-[var(--theme-accent)]'] {
+  box-shadow: var(--anime-glow);
+}
+
+.theme-anime ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--anime-mint), var(--anime-green));
+  border-radius: 9999px;
+}
+
+.theme-anime ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--anime-green), var(--anime-forest));
+}
+
+/* Cozy panel borders with soft rounded feel */
+.theme-anime .border {
+  border-color: #e6d5c3 !important;
+}
+
+/* Soft shadow on surfaces */
+.theme-anime [class*='shadow'] {
+  box-shadow: 0 2px 12px rgba(74, 55, 40, 0.06) !important;
+}
+
+/* ==========================================================================
+   Markdown Preview (Chat messages)
+   ========================================================================== */
+
+.prose-chat {
+  line-height: 1.75;
+  word-break: break-word;
+}
+
+.prose-chat p {
+  margin-bottom: 0.5em;
+}
+
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-chat strong {
+  font-weight: 700;
+  color: var(--theme-text);
+}
+
+.prose-chat em {
+  font-style: italic;
+}
+
+.prose-chat code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875em;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 0.125em 0.375em;
+}
+
+.prose-chat pre {
+  margin: 0.75em 0;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.75em 1em;
+}
+
+.prose-chat pre code {
+  background: none;
+  padding: 0;
+}
+
+.prose-chat ul,
+.prose-chat ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose-chat li {
+  margin-bottom: 0.25em;
+}
+
+.prose-chat blockquote {
+  border-left: 3px solid var(--theme-accent);
+  padding-left: 1em;
+  margin: 0.75em 0;
+  color: var(--theme-text-dim);
+  font-style: italic;
+}
+
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3,
+.prose-chat h4 {
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: var(--theme-accent);
+}
+
+.prose-chat h1 { font-size: 1.25em; }
+.prose-chat h2 { font-size: 1.125em; }
+.prose-chat h3 { font-size: 1em; }
+
+.prose-chat a {
+  color: var(--theme-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-chat a:hover {
+  color: var(--theme-accent);
+}
+
+.prose-chat hr {
+  border: none;
+  border-top: 1px solid var(--theme-border);
+  margin: 1em 0;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.25s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* Prevent text selection on interactive elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Focus-visible ring for accessibility */
+:focus-visible {
+  outline: 2px solid var(--theme-accent);
+  outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
